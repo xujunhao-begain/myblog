@@ -1,0 +1,56 @@
+#baseURL: https://hugo-paper.vercel.app/
+title: Home
+author: Steve Francia
+copyright: © 2025, xu
+languageCode: en
+DefaultContentLanguage: en
+enableInlineShortcodes: true
+ignoreErrors: error-remote-getjson
+pagination:
+  pagerSize: 3
+  theme: hugo-paper
+params:
+  avatar: xujunhao_edu@163.com
+  bio: Being Knowing Doing
+  color: linen
+  github: xujunhao-begain
+  instagram: xujunhao
+  name: Bruce Xu
+  twitter: xujunhao
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 10
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+privacy:
+  instagram:
+    disabled: false
+    simple: true
+  vimeo:
+    disabled: false
+    simple: true
+  x:
+    disabled: false
+    enableDNT: true
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
