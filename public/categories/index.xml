@@ -7,20 +7,13 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025, xu</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Syntax</title>
-      <link>/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Themes</title>
-      <link>/categories/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/themes/</guid>
+      <title>假设检验</title>
+      <link>/categories/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>/categories/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/</guid>
       <description></description>
     </item>
   </channel>

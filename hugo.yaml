@@ -14,9 +14,9 @@ params:
   bio: Being Knowing Doing
   color: linen
   github: xujunhao-begain
-  instagram: xujunhao
+  #instagram: xujunhao
   name: Bruce Xu
-  twitter: xujunhao
+  #twitter: xujunhao
 markup:
   goldmark:
     renderer:

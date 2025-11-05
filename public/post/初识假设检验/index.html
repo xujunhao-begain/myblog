@@ -1,0 +1,312 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>初识假设检验 - Home</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="背景
+一群小伙伴想要玩抛硬币猜正反，于是在家里翻箱倒柜，终于找到了一个透露着岁月感的硬币， 正准备一起玩，突然一个小伙伴说：“这个硬币看起来好破啊，它是公平的吗？”
+于是，小伙伴围在一起，叽叽喳喳讨论该如何验证这个硬币是否公平。小伙伴a说，这个我会，我们来做一个测试。
+基础概念
+
+
+提出原假设：这枚硬币是公平的（即正面朝上概率 p=0.5）
+进行检验：抛10次，看实验结果是否与假设相符
+（如果是公平的，这枚硬币正面朝上和反面朝上的概率都是$$\frac{1}{2}$$，那么应该正面和反面都会出现，且次数相差不大）
+结果：抛了10次，都是正面朝上，小伙伴$$a$$认为这枚硬币是不公平的
+
+
+进一步提问：小伙伴$$a$$的方法正确吗？为什么抛10次，都是正面朝上，就认为是不公平的？
+
+
+
+极值思想：在原假设成立的情况下，十次都正面朝上的概率是$$(\frac{1}{2} )^{10}$$，即0.00097 (也就是 p 值) ，
+但 p 值需考虑检验方向：
+
+若检验“是否偏向正面”（单边检验），p = P(10次全正)=0.00097
+若检验“是否不公平”（双边检验），p 值需包括两个极端方向：p = P(10次全正)&#43;P(10次全反)=2×$$(\frac{1}{2} )^{10}$$≈0.00195
+
+
+反证法：小概率事件在一次实验中极不可能发生，若发生，则怀疑原假设不成立。本例中，p ≈ 0.00195（双边检验），表明公平硬币出现此极端结果的概率仅0.195%，因此拒绝原假设。
+
+
+进一步提问：什么是 p 值？如何定义小概率事件？一定要扔10次吗，我扔5次全都正面朝上算不算小概率事件？
+
+
+p 值是在原假设（通常是“没有效应”或“没有差异”）为真时，观察到当前结果（或比当前结果更极端的情况）出现的概率。p 值越小，意味着这个结果在原假设下越不可能出现，因此越怀疑原假设不成立
+在假设检验中，我们通常设定一个 显著性水平 $$\alpha$$
+
+如果 p 值 ≤  $$\alpha$$，就认为这是一个小概率事件，拒绝原假设
+如果 p 值 &gt;  $$\alpha$$，就认为这个结果还在“合理范围内”，不拒绝原假设
+
+
+“小概率事件”的定义依赖于设定的 $$\alpha$$，一般取0.1 或 0.05 或 0.01
+
+如果设定  $$\alpha$$ = 0.05，那 p =2×$$(\frac{1}{2} )^{5}$$≈ 0.0625 大于 0.05，不拒绝原假设，认为硬币公平
+但如果你用更宽松的标准  $$\alpha$$ = 0.1，p =0.0625 小于 0.1，拒绝原假设，认为硬币不公平
+
+
+
+
+进一步提问:如何理解显著性水平  $$\alpha$$？在实验中如何设置合适的  $$\alpha$$？
+
+
+显著性水平  $$\alpha$$ 是你 愿意接受的犯错风险
+如果原假设是真的，我们有  $$\alpha$$ 的概率错判（即出现第一类错误，即弃真错误）
+以上面抛硬币为例，假如抛10次正面朝上或反面朝上的概率是0.00195，小于0.05，我们拒绝原假设，认为硬币不公平。但是，硬币如果真的是公平的，也会出现10次正面朝上或反面朝上的结果，只是这种概率极小（不代表不会出现），原假设是真的，我们放弃了。
+根据经验设置合适的 $$\alpha$$
+暂时无法在飞书文档外展示此内容
+
+
+小结
+核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险
+" />
+  <meta name="author" content="Bruce Xu" /><link rel="preload stylesheet" as="style" href="/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="/theme.png" />
+
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/293c337a35a31f2436cdc889f2288fa4?s=160&amp;d=identicon" />
+
+  <link rel="preload" as="image" href="/github.svg" />
+
+  <script
+    defer
+    src="/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.152.2">
+  <meta itemprop="name" content="初识假设检验">
+  <meta itemprop="description" content="背景
+一群小伙伴想要玩抛硬币猜正反，于是在家里翻箱倒柜，终于找到了一个透露着岁月感的硬币， 正准备一起玩，突然一个小伙伴说：“这个硬币看起来好破啊，它是公平的吗？” 于是，小伙伴围在一起，叽叽喳喳讨论该如何验证这个硬币是否公平。小伙伴a说，这个我会，我们来做一个测试。 基础概念
+提出原假设：这枚硬币是公平的（即正面朝上概率 p=0.5） 进行检验：抛10次，看实验结果是否与假设相符 （如果是公平的，这枚硬币正面朝上和反面朝上的概率都是$$\frac{1}{2}$$，那么应该正面和反面都会出现，且次数相差不大） 结果：抛了10次，都是正面朝上，小伙伴$$a$$认为这枚硬币是不公平的
+进一步提问：小伙伴$$a$$的方法正确吗？为什么抛10次，都是正面朝上，就认为是不公平的？
+极值思想：在原假设成立的情况下，十次都正面朝上的概率是$$(\frac{1}{2} )^{10}$$，即0.00097 (也就是 p 值) ， 但 p 值需考虑检验方向： 若检验“是否偏向正面”（单边检验），p = P(10次全正)=0.00097 若检验“是否不公平”（双边检验），p 值需包括两个极端方向：p = P(10次全正)&#43;P(10次全反)=2×$$(\frac{1}{2} )^{10}$$≈0.00195 反证法：小概率事件在一次实验中极不可能发生，若发生，则怀疑原假设不成立。本例中，p ≈ 0.00195（双边检验），表明公平硬币出现此极端结果的概率仅0.195%，因此拒绝原假设。 进一步提问：什么是 p 值？如何定义小概率事件？一定要扔10次吗，我扔5次全都正面朝上算不算小概率事件？ p 值是在原假设（通常是“没有效应”或“没有差异”）为真时，观察到当前结果（或比当前结果更极端的情况）出现的概率。p 值越小，意味着这个结果在原假设下越不可能出现，因此越怀疑原假设不成立 在假设检验中，我们通常设定一个 显著性水平 $$\alpha$$ 如果 p 值 ≤ $$\alpha$$，就认为这是一个小概率事件，拒绝原假设 如果 p 值 &gt; $$\alpha$$，就认为这个结果还在“合理范围内”，不拒绝原假设 “小概率事件”的定义依赖于设定的 $$\alpha$$，一般取0.1 或 0.05 或 0.01 如果设定 $$\alpha$$ = 0.05，那 p =2×$$(\frac{1}{2} )^{5}$$≈ 0.0625 大于 0.05，不拒绝原假设，认为硬币公平 但如果你用更宽松的标准 $$\alpha$$ = 0.1，p =0.0625 小于 0.1，拒绝原假设，认为硬币不公平 进一步提问:如何理解显著性水平 $$\alpha$$？在实验中如何设置合适的 $$\alpha$$？ 显著性水平 $$\alpha$$ 是你 愿意接受的犯错风险 如果原假设是真的，我们有 $$\alpha$$ 的概率错判（即出现第一类错误，即弃真错误） 以上面抛硬币为例，假如抛10次正面朝上或反面朝上的概率是0.00195，小于0.05，我们拒绝原假设，认为硬币不公平。但是，硬币如果真的是公平的，也会出现10次正面朝上或反面朝上的结果，只是这种概率极小（不代表不会出现），原假设是真的，我们放弃了。 根据经验设置合适的 $$\alpha$$ 暂时无法在飞书文档外展示此内容 小结 核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险">
+  <meta itemprop="datePublished" content="2025-11-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-11-04T00:00:00+00:00">
+  <meta itemprop="wordCount" content="91"><meta property="og:url" content="/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/">
+  <meta property="og:site_name" content="Home">
+  <meta property="og:title" content="初识假设检验">
+  <meta property="og:description" content="背景
+一群小伙伴想要玩抛硬币猜正反，于是在家里翻箱倒柜，终于找到了一个透露着岁月感的硬币， 正准备一起玩，突然一个小伙伴说：“这个硬币看起来好破啊，它是公平的吗？” 于是，小伙伴围在一起，叽叽喳喳讨论该如何验证这个硬币是否公平。小伙伴a说，这个我会，我们来做一个测试。 基础概念
+提出原假设：这枚硬币是公平的（即正面朝上概率 p=0.5） 进行检验：抛10次，看实验结果是否与假设相符 （如果是公平的，这枚硬币正面朝上和反面朝上的概率都是$$\frac{1}{2}$$，那么应该正面和反面都会出现，且次数相差不大） 结果：抛了10次，都是正面朝上，小伙伴$$a$$认为这枚硬币是不公平的
+进一步提问：小伙伴$$a$$的方法正确吗？为什么抛10次，都是正面朝上，就认为是不公平的？
+极值思想：在原假设成立的情况下，十次都正面朝上的概率是$$(\frac{1}{2} )^{10}$$，即0.00097 (也就是 p 值) ， 但 p 值需考虑检验方向： 若检验“是否偏向正面”（单边检验），p = P(10次全正)=0.00097 若检验“是否不公平”（双边检验），p 值需包括两个极端方向：p = P(10次全正)&#43;P(10次全反)=2×$$(\frac{1}{2} )^{10}$$≈0.00195 反证法：小概率事件在一次实验中极不可能发生，若发生，则怀疑原假设不成立。本例中，p ≈ 0.00195（双边检验），表明公平硬币出现此极端结果的概率仅0.195%，因此拒绝原假设。 进一步提问：什么是 p 值？如何定义小概率事件？一定要扔10次吗，我扔5次全都正面朝上算不算小概率事件？ p 值是在原假设（通常是“没有效应”或“没有差异”）为真时，观察到当前结果（或比当前结果更极端的情况）出现的概率。p 值越小，意味着这个结果在原假设下越不可能出现，因此越怀疑原假设不成立 在假设检验中，我们通常设定一个 显著性水平 $$\alpha$$ 如果 p 值 ≤ $$\alpha$$，就认为这是一个小概率事件，拒绝原假设 如果 p 值 &gt; $$\alpha$$，就认为这个结果还在“合理范围内”，不拒绝原假设 “小概率事件”的定义依赖于设定的 $$\alpha$$，一般取0.1 或 0.05 或 0.01 如果设定 $$\alpha$$ = 0.05，那 p =2×$$(\frac{1}{2} )^{5}$$≈ 0.0625 大于 0.05，不拒绝原假设，认为硬币公平 但如果你用更宽松的标准 $$\alpha$$ = 0.1，p =0.0625 小于 0.1，拒绝原假设，认为硬币不公平 进一步提问:如何理解显著性水平 $$\alpha$$？在实验中如何设置合适的 $$\alpha$$？ 显著性水平 $$\alpha$$ 是你 愿意接受的犯错风险 如果原假设是真的，我们有 $$\alpha$$ 的概率错判（即出现第一类错误，即弃真错误） 以上面抛硬币为例，假如抛10次正面朝上或反面朝上的概率是0.00195，小于0.05，我们拒绝原假设，认为硬币不公平。但是，硬币如果真的是公平的，也会出现10次正面朝上或反面朝上的结果，只是这种概率极小（不代表不会出现），原假设是真的，我们放弃了。 根据经验设置合适的 $$\alpha$$ 暂时无法在飞书文档外展示此内容 小结 核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-11-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-04T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="初识假设检验">
+  <meta name="twitter:description" content="背景
+一群小伙伴想要玩抛硬币猜正反，于是在家里翻箱倒柜，终于找到了一个透露着岁月感的硬币， 正准备一起玩，突然一个小伙伴说：“这个硬币看起来好破啊，它是公平的吗？” 于是，小伙伴围在一起，叽叽喳喳讨论该如何验证这个硬币是否公平。小伙伴a说，这个我会，我们来做一个测试。 基础概念
+提出原假设：这枚硬币是公平的（即正面朝上概率 p=0.5） 进行检验：抛10次，看实验结果是否与假设相符 （如果是公平的，这枚硬币正面朝上和反面朝上的概率都是$$\frac{1}{2}$$，那么应该正面和反面都会出现，且次数相差不大） 结果：抛了10次，都是正面朝上，小伙伴$$a$$认为这枚硬币是不公平的
+进一步提问：小伙伴$$a$$的方法正确吗？为什么抛10次，都是正面朝上，就认为是不公平的？
+极值思想：在原假设成立的情况下，十次都正面朝上的概率是$$(\frac{1}{2} )^{10}$$，即0.00097 (也就是 p 值) ， 但 p 值需考虑检验方向： 若检验“是否偏向正面”（单边检验），p = P(10次全正)=0.00097 若检验“是否不公平”（双边检验），p 值需包括两个极端方向：p = P(10次全正)&#43;P(10次全反)=2×$$(\frac{1}{2} )^{10}$$≈0.00195 反证法：小概率事件在一次实验中极不可能发生，若发生，则怀疑原假设不成立。本例中，p ≈ 0.00195（双边检验），表明公平硬币出现此极端结果的概率仅0.195%，因此拒绝原假设。 进一步提问：什么是 p 值？如何定义小概率事件？一定要扔10次吗，我扔5次全都正面朝上算不算小概率事件？ p 值是在原假设（通常是“没有效应”或“没有差异”）为真时，观察到当前结果（或比当前结果更极端的情况）出现的概率。p 值越小，意味着这个结果在原假设下越不可能出现，因此越怀疑原假设不成立 在假设检验中，我们通常设定一个 显著性水平 $$\alpha$$ 如果 p 值 ≤ $$\alpha$$，就认为这是一个小概率事件，拒绝原假设 如果 p 值 &gt; $$\alpha$$，就认为这个结果还在“合理范围内”，不拒绝原假设 “小概率事件”的定义依赖于设定的 $$\alpha$$，一般取0.1 或 0.05 或 0.01 如果设定 $$\alpha$$ = 0.05，那 p =2×$$(\frac{1}{2} )^{5}$$≈ 0.0625 大于 0.05，不拒绝原假设，认为硬币公平 但如果你用更宽松的标准 $$\alpha$$ = 0.1，p =0.0625 小于 0.1，拒绝原假设，认为硬币不公平 进一步提问:如何理解显著性水平 $$\alpha$$？在实验中如何设置合适的 $$\alpha$$？ 显著性水平 $$\alpha$$ 是你 愿意接受的犯错风险 如果原假设是真的，我们有 $$\alpha$$ 的概率错判（即出现第一类错误，即弃真错误） 以上面抛硬币为例，假如抛10次正面朝上或反面朝上的概率是0.00195，小于0.05，我们拒绝原假设，认为硬币不公平。但是，硬币如果真的是公平的，也会出现10次正面朝上或反面朝上的结果，只是这种概率极小（不代表不会出现），原假设是真的，我们放弃了。 根据经验设置合适的 $$\alpha$$ 暂时无法在飞书文档外展示此内容 小结 核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险">
+
+  <link rel="canonical" href="/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="/"
+      >Home</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/xujunhao-begain"
+        target="_blank"
+        rel="me"
+      >github</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">初识假设检验</h1><div class="text-xs antialiased opacity-60"><time>Nov 4, 2025</time><span class="mx-1">&middot;</span>
+      <span>Bruce Xu</span></div></header>
+
+  <section><p>背景</p>
+<p>一群小伙伴想要玩抛硬币猜正反，于是在家里翻箱倒柜，终于找到了一个透露着岁月感的硬币， 正准备一起玩，突然一个小伙伴说：“这个硬币看起来好破啊，它是公平的吗？”
+于是，小伙伴围在一起，叽叽喳喳讨论该如何验证这个硬币是否公平。小伙伴a说，这个我会，我们来做一个测试。
+基础概念</p>
+<ol>
+<li>
+<p>提出原假设：这枚硬币是公平的（即正面朝上概率 p=0.5）
+进行检验：抛10次，看实验结果是否与假设相符
+（如果是公平的，这枚硬币正面朝上和反面朝上的概率都是$$\frac{1}{2}$$，那么应该正面和反面都会出现，且次数相差不大）
+结果：抛了10次，都是正面朝上，小伙伴$$a$$认为这枚硬币是不公平的</p>
+</li>
+<li>
+<p>进一步提问：小伙伴$$a$$的方法正确吗？为什么抛10次，都是正面朝上，就认为是不公平的？</p>
+</li>
+</ol>
+<ul>
+<li>极值思想：在原假设成立的情况下，十次都正面朝上的概率是$$(\frac{1}{2} )^{10}$$，即0.00097 (也就是 p 值) ，
+但 p 值需考虑检验方向：
+<ul>
+<li>若检验“是否偏向正面”（单边检验），p = P(10次全正)=0.00097</li>
+<li>若检验“是否不公平”（双边检验），p 值需包括两个极端方向：p = P(10次全正)+P(10次全反)=2×$$(\frac{1}{2} )^{10}$$≈0.00195</li>
+</ul>
+</li>
+<li>反证法：小概率事件在一次实验中极不可能发生，若发生，则怀疑原假设不成立。本例中，p ≈ 0.00195（双边检验），表明公平硬币出现此极端结果的概率仅0.195%，因此拒绝原假设。</li>
+</ul>
+<ol start="3">
+<li>进一步提问：什么是 p 值？如何定义小概率事件？一定要扔10次吗，我扔5次全都正面朝上算不算小概率事件？</li>
+</ol>
+<ul>
+<li>p 值是在原假设（通常是“没有效应”或“没有差异”）为真时，观察到当前结果（或比当前结果更极端的情况）出现的概率。p 值越小，意味着这个结果在原假设下越不可能出现，因此越怀疑原假设不成立</li>
+<li>在假设检验中，我们通常设定一个 显著性水平 $$\alpha$$
+<ul>
+<li>如果 p 值 ≤  $$\alpha$$，就认为这是一个小概率事件，拒绝原假设</li>
+<li>如果 p 值 &gt;  $$\alpha$$，就认为这个结果还在“合理范围内”，不拒绝原假设</li>
+</ul>
+</li>
+<li>“小概率事件”的定义依赖于设定的 $$\alpha$$，一般取0.1 或 0.05 或 0.01
+<ul>
+<li>如果设定  $$\alpha$$ = 0.05，那 p =2×$$(\frac{1}{2} )^{5}$$≈ 0.0625 大于 0.05，不拒绝原假设，认为硬币公平</li>
+<li>但如果你用更宽松的标准  $$\alpha$$ = 0.1，p =0.0625 小于 0.1，拒绝原假设，认为硬币不公平</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>进一步提问:如何理解显著性水平  $$\alpha$$？在实验中如何设置合适的  $$\alpha$$？</li>
+</ol>
+<ul>
+<li>显著性水平  $$\alpha$$ 是你 愿意接受的犯错风险
+如果原假设是真的，我们有  $$\alpha$$ 的概率错判（即出现第一类错误，即弃真错误）
+以上面抛硬币为例，假如抛10次正面朝上或反面朝上的概率是0.00195，小于0.05，我们拒绝原假设，认为硬币不公平。但是，硬币如果真的是公平的，也会出现10次正面朝上或反面朝上的结果，只是这种概率极小（不代表不会出现），原假设是真的，我们放弃了。</li>
+<li>根据经验设置合适的 $$\alpha$$
+暂时无法在飞书文档外展示此内容</li>
+</ul>
+<ol start="5">
+<li>小结
+核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险</li>
+</ol>
+</section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="/post/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C-%E5%8D%95%E5%8F%8C%E4%BE%A7%E6%A3%80%E9%AA%8C/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>假设检验-单双侧检验</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">© 2025, xu</div>
+  
+</footer>
+</body>
+</html>
