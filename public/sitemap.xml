@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>http://39.103.49.197/public/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>http://39.103.49.197/public/categories/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/index/</loc>
+    <loc>http://39.103.49.197/public/tags/index/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>http://39.103.49.197/public/post/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>http://39.103.49.197/public/tags/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/</loc>
+    <loc>http://39.103.49.197/public/categories/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C-%E5%8D%95%E5%8F%8C%E4%BE%A7%E6%A3%80%E9%AA%8C/</loc>
+    <loc>http://39.103.49.197/public/post/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C-%E5%8D%95%E5%8F%8C%E4%BE%A7%E6%A3%80%E9%AA%8C/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>http://39.103.49.197/public/about/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/contact/</loc>
+    <loc>http://39.103.49.197/public/contact/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/</loc>
+    <loc>http://39.103.49.197/public/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>http://39.103.49.197/public/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/series/</loc>
+    <loc>http://39.103.49.197/public/series/</loc>
   </url>
 </urlset>

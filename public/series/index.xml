@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Home</title>
-    <link>/series/</link>
+    <link>http://39.103.49.197/public/series/</link>
     <description>Recent content in Series on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025, xu</copyright>
-    <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://39.103.49.197/public/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -82,29 +82,29 @@ p 值是在原假设（通常是“没有效应”或“没有差异”）为真
 小结
 核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险
 " />
-  <meta name="author" content="Bruce Xu" /><link rel="preload stylesheet" as="style" href="/main.min.css" />
+  <meta name="author" content="Bruce Xu" /><link rel="preload stylesheet" as="style" href="http://39.103.49.197/public/main.min.css" />
 
   
-  <link rel="preload" as="image" href="/theme.png" />
+  <link rel="preload" as="image" href="http://39.103.49.197/public/theme.png" />
 
   <link rel="preload" as="image" href="https://www.gravatar.com/avatar/293c337a35a31f2436cdc889f2288fa4?s=160&amp;d=identicon" />
 
-  <link rel="preload" as="image" href="/github.svg" />
+  <link rel="preload" as="image" href="http://39.103.49.197/public/github.svg" />
 
   <script
     defer
-    src="/highlight.min.js"
+    src="http://39.103.49.197/public/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
 
   
   <link
     rel="icon"
-    href="/favicon.ico"
+    href="http://39.103.49.197/public/favicon.ico"
   />
   <link
     rel="apple-touch-icon"
-    href="/apple-touch-icon.png"
+    href="http://39.103.49.197/public/apple-touch-icon.png"
   />
 
   <meta name="generator" content="Hugo 0.152.2">
@@ -116,7 +116,7 @@ p 值是在原假设（通常是“没有效应”或“没有差异”）为真
 极值思想：在原假设成立的情况下，十次都正面朝上的概率是$$(\frac{1}{2} )^{10}$$，即0.00097 (也就是 p 值) ， 但 p 值需考虑检验方向： 若检验“是否偏向正面”（单边检验），p = P(10次全正)=0.00097 若检验“是否不公平”（双边检验），p 值需包括两个极端方向：p = P(10次全正)&#43;P(10次全反)=2×$$(\frac{1}{2} )^{10}$$≈0.00195 反证法：小概率事件在一次实验中极不可能发生，若发生，则怀疑原假设不成立。本例中，p ≈ 0.00195（双边检验），表明公平硬币出现此极端结果的概率仅0.195%，因此拒绝原假设。 进一步提问：什么是 p 值？如何定义小概率事件？一定要扔10次吗，我扔5次全都正面朝上算不算小概率事件？ p 值是在原假设（通常是“没有效应”或“没有差异”）为真时，观察到当前结果（或比当前结果更极端的情况）出现的概率。p 值越小，意味着这个结果在原假设下越不可能出现，因此越怀疑原假设不成立 在假设检验中，我们通常设定一个 显著性水平 $$\alpha$$ 如果 p 值 ≤ $$\alpha$$，就认为这是一个小概率事件，拒绝原假设 如果 p 值 &gt; $$\alpha$$，就认为这个结果还在“合理范围内”，不拒绝原假设 “小概率事件”的定义依赖于设定的 $$\alpha$$，一般取0.1 或 0.05 或 0.01 如果设定 $$\alpha$$ = 0.05，那 p =2×$$(\frac{1}{2} )^{5}$$≈ 0.0625 大于 0.05，不拒绝原假设，认为硬币公平 但如果你用更宽松的标准 $$\alpha$$ = 0.1，p =0.0625 小于 0.1，拒绝原假设，认为硬币不公平 进一步提问:如何理解显著性水平 $$\alpha$$？在实验中如何设置合适的 $$\alpha$$？ 显著性水平 $$\alpha$$ 是你 愿意接受的犯错风险 如果原假设是真的，我们有 $$\alpha$$ 的概率错判（即出现第一类错误，即弃真错误） 以上面抛硬币为例，假如抛10次正面朝上或反面朝上的概率是0.00195，小于0.05，我们拒绝原假设，认为硬币不公平。但是，硬币如果真的是公平的，也会出现10次正面朝上或反面朝上的结果，只是这种概率极小（不代表不会出现），原假设是真的，我们放弃了。 根据经验设置合适的 $$\alpha$$ 暂时无法在飞书文档外展示此内容 小结 核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险">
   <meta itemprop="datePublished" content="2025-11-04T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-11-04T00:00:00+00:00">
-  <meta itemprop="wordCount" content="91"><meta property="og:url" content="/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/">
+  <meta itemprop="wordCount" content="91"><meta property="og:url" content="http://39.103.49.197/public/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/">
   <meta property="og:site_name" content="Home">
   <meta property="og:title" content="初识假设检验">
   <meta property="og:description" content="背景
@@ -138,7 +138,7 @@ p 值是在原假设（通常是“没有效应”或“没有差异”）为真
 进一步提问：小伙伴$$a$$的方法正确吗？为什么抛10次，都是正面朝上，就认为是不公平的？
 极值思想：在原假设成立的情况下，十次都正面朝上的概率是$$(\frac{1}{2} )^{10}$$，即0.00097 (也就是 p 值) ， 但 p 值需考虑检验方向： 若检验“是否偏向正面”（单边检验），p = P(10次全正)=0.00097 若检验“是否不公平”（双边检验），p 值需包括两个极端方向：p = P(10次全正)&#43;P(10次全反)=2×$$(\frac{1}{2} )^{10}$$≈0.00195 反证法：小概率事件在一次实验中极不可能发生，若发生，则怀疑原假设不成立。本例中，p ≈ 0.00195（双边检验），表明公平硬币出现此极端结果的概率仅0.195%，因此拒绝原假设。 进一步提问：什么是 p 值？如何定义小概率事件？一定要扔10次吗，我扔5次全都正面朝上算不算小概率事件？ p 值是在原假设（通常是“没有效应”或“没有差异”）为真时，观察到当前结果（或比当前结果更极端的情况）出现的概率。p 值越小，意味着这个结果在原假设下越不可能出现，因此越怀疑原假设不成立 在假设检验中，我们通常设定一个 显著性水平 $$\alpha$$ 如果 p 值 ≤ $$\alpha$$，就认为这是一个小概率事件，拒绝原假设 如果 p 值 &gt; $$\alpha$$，就认为这个结果还在“合理范围内”，不拒绝原假设 “小概率事件”的定义依赖于设定的 $$\alpha$$，一般取0.1 或 0.05 或 0.01 如果设定 $$\alpha$$ = 0.05，那 p =2×$$(\frac{1}{2} )^{5}$$≈ 0.0625 大于 0.05，不拒绝原假设，认为硬币公平 但如果你用更宽松的标准 $$\alpha$$ = 0.1，p =0.0625 小于 0.1，拒绝原假设，认为硬币不公平 进一步提问:如何理解显著性水平 $$\alpha$$？在实验中如何设置合适的 $$\alpha$$？ 显著性水平 $$\alpha$$ 是你 愿意接受的犯错风险 如果原假设是真的，我们有 $$\alpha$$ 的概率错判（即出现第一类错误，即弃真错误） 以上面抛硬币为例，假如抛10次正面朝上或反面朝上的概率是0.00195，小于0.05，我们拒绝原假设，认为硬币不公平。但是，硬币如果真的是公平的，也会出现10次正面朝上或反面朝上的结果，只是这种概率极小（不代表不会出现），原假设是真的，我们放弃了。 根据经验设置合适的 $$\alpha$$ 暂时无法在飞书文档外展示此内容 小结 核心思想：假设检验是概率性决策，非确定性证明。p 值提供证据强度， $$\alpha$$控制决策风险">
 
-  <link rel="canonical" href="/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/" />
+  <link rel="canonical" href="http://39.103.49.197/public/post/%E5%88%9D%E8%AF%86%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C/" />
 </head>
 <body
     class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
@@ -148,7 +148,7 @@ p 值是在原假设（通常是“没有效应”或“没有差异”）为真
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
       class="-translate-y-[1px] text-2xl font-medium"
-      href="/"
+      href="http://39.103.49.197/public/"
       >Home</a
     >
     <div
@@ -213,11 +213,11 @@ p 值是在原假设（通常是“没有效应”或“没有差异”）为真
       class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
     ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
-        href="/about/"
+        href="/public/about/"
         >About</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
-        href="/contact/"
+        href="/public/contact/"
         >Contact</a
       ></nav><nav
       class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
@@ -300,7 +300,7 @@ p 值是在原假设（通常是“没有效应”或“没有差异”）为真
 
   <nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="/post/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C-%E5%8D%95%E5%8F%8C%E4%BE%A7%E6%A3%80%E9%AA%8C/"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://39.103.49.197/public/post/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C-%E5%8D%95%E5%8F%8C%E4%BE%A7%E6%A3%80%E9%AA%8C/"
       ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>假设检验-单双侧检验</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"

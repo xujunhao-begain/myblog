@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on Home</title>
-    <link>/tags/index/</link>
+    <link>http://39.103.49.197/public/tags/index/</link>
     <description>Recent content in Index on Home</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025, xu</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://39.103.49.197/public/tags/index/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
