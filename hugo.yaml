@@ -10,7 +10,7 @@ pagination: #分页设置：每页3项，使用hugo-paper主题风格
   pagerSize: 3
   theme: hugo-paper
 params:
-  avatar: "https://img-s.msn.cn/tenant/amp/entityid/AA12Qgeb?w=0&h=0&q=60&m=6&f=jpg&u=t" #xujunhao_edu@163.com # 可能是Gravatar邮箱
+  avatar: "https://img-s.msn.cn/tenant/amp/entityid/AA12Qgeb?w=0&h=0&q=60&m=6&f=jpg&u=t" #xujunhao_edu@163.com
   bio: Being Knowing Doing # 个人简介
   color: linen # 主题颜色（亚麻色）
   github: xujunhao-begain # GitHub用户名
