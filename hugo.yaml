@@ -1,44 +1,44 @@
-baseURL: http://39.103.49.197/public/
-title: Home
-author: Steve Francia
-copyright: © 2025, xu
-languageCode: en
+baseURL: http://39.103.49.197/public/ # 站点地址
+title: Home # 网站标题
+author: Steve Francia # 作者
+copyright: xu © 2025 # 版权信息
+languageCode: en # 语言
 DefaultContentLanguage: en
-enableInlineShortcodes: true
-ignoreErrors: error-remote-getjson
-pagination:
+enableInlineShortcodes: true #启用内联短代码
+ignoreErrors: error-remote-getjson #忽略远程JSON获取错误
+pagination: #分页设置：每页3项，使用hugo-paper主题风格
   pagerSize: 3
   theme: hugo-paper
 params:
-  avatar: xujunhao_edu@163.com
-  bio: Being Knowing Doing
-  color: linen
-  github: xujunhao-begain
+  avatar: "https://img-s.msn.cn/tenant/amp/entityid/AA12Qgeb?w=0&h=0&q=60&m=6&f=jpg&u=t" #xujunhao_edu@163.com # 可能是Gravatar邮箱
+  bio: Being Knowing Doing # 个人简介
+  color: linen # 主题颜色（亚麻色）
+  github: xujunhao-begain # GitHub用户名
   #instagram: xujunhao
-  name: Bruce Xu
+  name: Bruce Xu # 显示名称
   #twitter: xujunhao
 markup:
   goldmark:
     renderer:
-      unsafe: true
-menu:
+      unsafe: true # 允许在Markdown中使用HTML
+menu: #两个主要菜单项：About（关于）和 Contact（联系）
   main:
     - identifier: about
       name: About
       url: /about/
-      weight: 10
+      weight: 10 # 控制菜单项排序
     - identifier: contact
       name: Contact
       url: /contact/
       weight: 10
 taxonomies:
-  category: categories
-  series: series
-  tag: tags
-privacy:
+  category: categories # 分类
+  series: series # 系列文章 
+  tag: tags # 标签
+privacy: # 对第三方嵌入内容的隐私保护配置
   instagram:
     disabled: false
-    simple: true
+    simple: true # 启用简单模式或增强隐私模式
   vimeo:
     disabled: false
     simple: true
@@ -49,7 +49,7 @@ privacy:
   youtube:
     disabled: false
     privacyEnhanced: true
-services:
+services: #禁用Instagram和X的内联CSS
   instagram:
     disableInlineCSS: true
   x:
